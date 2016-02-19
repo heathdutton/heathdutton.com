@@ -3,7 +3,7 @@ title: 'Heath Dutton'
 description: 'Developer / CSM'
 url: 'http://heathdutton.com'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-18522798-1'
 
 author:
   name: 'heath dutton'
