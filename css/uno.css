@@ -216,7 +216,7 @@ pre {
 	background: #e25440;
 	border-radius: 3px;
 	text-align: center;
-	color: #FFF; }
+	color: #57BA86; }
 
 .container {
 	position: relative;
@@ -253,7 +253,7 @@ pre {
 .avatar,
 .logo {
 	border-radius: 50%;
-	border: 3px solid #FFF;
+	border: 3px solid #57BA86;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); }
 
 hr {
@@ -321,7 +321,7 @@ hr {
 	margin: 0 0 5px 0;
 	font-size: 1.1em;
 	letter-spacing: 5px;
-	color: #FFF; }
+	color: #57BA86; }
 
 .panel-subtitle {
 	font-size: 1.2em;
@@ -399,10 +399,10 @@ hr {
 .panel-inverted {
 	font-weight: 100;
 	text-align: center;
-	color: #FFF;
+	color: #57BA86;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9); }
 	.panel-inverted a {
-		color: #FFF; }
+		color: #57BA86; }
 
 .cover-navigation {
 	margin-top: 10px; }
@@ -445,8 +445,8 @@ hr {
 	color: #e25440;
 	-webkit-font-smoothing: antialiased; }
 	.btn:hover, .navigation__item a:hover {
-		color: #fff;
-		border-color: #fff; }
+		color: #57BA86;
+		border-color: #57BA86; }
 
 .btn-secondary {
 	border-color: #5ba4e5;
@@ -492,7 +492,7 @@ hr {
 	position: relative;
 	top: 3px;
 	font-size: 36px;
-	color: #FFF; }
+	color: #57BA86; }
 
 nav {
 	display: inline-block;
@@ -512,12 +512,12 @@ nav {
 	.navigation__item a {
 		display: block;
 		position: relative;
-		border-color: #FFF;
-		color: #FFF;
+		border-color: #57BA86;
+		color: #57BA86;
 		opacity: .8; }
 		.navigation__item a:hover {
-			color: #FFF;
-			border-color: #FFF;
+			color: #57BA86;
+			border-color: #57BA86;
 			opacity: 1; }
 
 .navigation--social {
@@ -601,7 +601,7 @@ input[type="search"],
 input[type="tel"] {
 	width: 240px;
 	padding: 1em 1em;
-	background: #FFF;
+	background: #57BA86;
 	border: 1px solid #dddddd;
 	border-radius: 3px;
 	font-size: .9em;
