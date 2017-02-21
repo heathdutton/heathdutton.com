@@ -1,12 +1,12 @@
 # Site settings
-title: 'Caffeine to Code Converter - Heath Dutton ☕'
+title: 'Heath Dutton'
 description: 'Tech Lead / CSM / Developer'
 url: 'http://heathdutton.com'
 baseurl: '/'
 google_analytics: 'UA-18522798-1'
 
 author:
-  name: ' heath dutton ☕'
+  name: 'heath dutton'
   email: heathdutton@gmail.com
   linkedin_username: heathdutton
   github_username: heathdutton
