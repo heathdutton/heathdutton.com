@@ -1137,3 +1137,12 @@ input[type="tel"]:-ms-input-placeholder {
 .shake-rotate.shake-constant {
     animation: shake-rotate 100ms ease-in-out infinite, hue .6s ease-in-out infinite;
 }
+
+.navigation__item a {
+    border: 0;
+    font-size: 1.8em;
+}
+.user-image {
+    border: 0;
+    height: 140px;
+}
