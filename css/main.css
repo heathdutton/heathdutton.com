@@ -50,4 +50,9 @@ pre.highlight,
   position: relative;
   width: 100px;
   border-radius:100%;
+  width: 140px;
+  height: 140px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
 }
