@@ -842,9 +842,10 @@ input[type="tel"]:-ms-input-placeholder {
     }
 }
 @media all and (max-width: 960px) {
+    /*
     .btn-mobile-menu {
         display: block;
-    }
+    }*/
     .panel-main {
         display: table;
         position: relative;
@@ -892,6 +893,7 @@ input[type="tel"]:-ms-input-placeholder {
         display: none;
         margin: 1em auto;
     }
+    /*
     .navigation-wrapper {
         display: none;
         position: fixed;
@@ -906,6 +908,7 @@ input[type="tel"]:-ms-input-placeholder {
     .navigation-wrapper.visible {
         display: block;
     }
+    */
     .cover-navigation {
         display: block;
         position: relative;
