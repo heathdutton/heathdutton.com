@@ -1,6 +1,6 @@
 # Site settings
 title: 'Heath Dutton'
-description: 'Open Source Advocate'
+description: 'Tech Director'
 url: 'https://heathdutton.com'
 baseurl: ''
 google_analytics: 'UA-18522798-1'
@@ -11,7 +11,7 @@ author:
   linkedin_username: heathdutton
   github_username: heathdutton
   drupal_username: heathdutton
-  twitter_username: heathdutton
+  # twitter_username: heathdutton
   # facebook_username: heathadutton
 
 # Build settings
