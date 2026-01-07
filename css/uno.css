@@ -515,16 +515,12 @@ hr {
     max-width: 620px;
     margin: 0 auto;
 }
-.panel-main__content .user-image,
 .panel-main__content .panel-title,
 .panel-main__content .panel-cover__divider,
 .panel-main__content .panel-cover__description,
 .panel-main__content .navigation-wrapper {
     opacity: 0;
     animation: fade-in 300ms ease-out forwards;
-}
-.panel-main__content .user-image {
-    animation-delay: 0ms;
 }
 .panel-main__content .panel-title {
     animation-delay: 150ms;
@@ -1217,5 +1213,10 @@ input[type="tel"]:-ms-input-placeholder {
     border-radius: 50%;
     box-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px rgba(0, 0, 0, 0.9), 0 0 15px #00c532, 0 0 30px rgba(0, 255, 65, 0.5);
     filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
-    animation: crt-pulse-img 3s ease-in-out infinite;
+    opacity: 0;
+    animation: fade-in 300ms ease-out forwards, crt-pulse-img 3s ease-in-out infinite;
+}
+.user-image:hover {
+    opacity: 1;
+    animation: shake-rotate 100ms ease-in-out infinite, hue .6s ease-in-out infinite, crt-pulse-img 3s ease-in-out infinite;
 }
