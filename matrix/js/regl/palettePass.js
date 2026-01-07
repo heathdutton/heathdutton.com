@@ -74,7 +74,7 @@ export default ({ regl, config, mouse }, inputs) => {
 			tex: inputs.primary,
 			bloomTex: inputs.bloom,
 			paletteTex,
-			mousePos: () => mouse ? [mouse.x, mouse.y] : [-1, -1],
+			mousePos: () => (mouse && typeof mouse.x === 'number') ? [mouse.x, mouse.y] : [-1.0, -1.0],
 		},
 		framebuffer: output,
 	});

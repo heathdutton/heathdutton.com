@@ -1216,5 +1216,59 @@ input[type="tel"]:-ms-input-placeholder {
     animation: fade-in 300ms ease-out forwards, crt-pulse-img 3s ease-in-out infinite;
 }
 .user-image:hover {
-    animation: fade-in 300ms ease-out forwards, shake-rotate 100ms ease-in-out infinite, hue .6s ease-in-out infinite, crt-pulse-img 3s ease-in-out infinite;
+    animation: fade-in 300ms ease-out forwards, glitch 150ms steps(2) infinite, crt-pulse-img 3s ease-in-out infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
+        clip-path: inset(0 0 0 0);
+    }
+    10% {
+        transform: translate(-3px, 2px);
+        filter: sepia(100%) saturate(400%) brightness(90%) hue-rotate(60deg);
+        clip-path: inset(40% 0 20% 0);
+    }
+    20% {
+        transform: translate(3px, -1px);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(100deg);
+        clip-path: inset(10% 0 60% 0);
+    }
+    30% {
+        transform: translate(-2px, -2px) skewX(2deg);
+        filter: sepia(100%) saturate(500%) brightness(80%) hue-rotate(40deg);
+    }
+    40% {
+        transform: translate(2px, 1px);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
+        clip-path: inset(25% 0 35% 0);
+    }
+    50% {
+        transform: translate(0) skewX(-1deg);
+        filter: sepia(100%) saturate(350%) brightness(60%) hue-rotate(120deg);
+    }
+    60% {
+        transform: translate(-3px, 1px);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
+        clip-path: inset(70% 0 5% 0);
+    }
+    70% {
+        transform: translate(2px, -2px) skewX(1deg);
+        filter: sepia(100%) saturate(400%) brightness(85%) hue-rotate(50deg);
+    }
+    80% {
+        transform: translate(-1px, 2px);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
+        clip-path: inset(5% 0 45% 0);
+    }
+    90% {
+        transform: translate(3px, 0) skewX(-2deg);
+        filter: sepia(100%) saturate(300%) brightness(75%) hue-rotate(90deg);
+    }
+    100% {
+        transform: translate(0);
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(80deg);
+        clip-path: inset(0 0 0 0);
+    }
 }
