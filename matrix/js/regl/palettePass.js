@@ -54,7 +54,7 @@ const makePalette = (regl, entries) => {
 // won't persist across subsequent frames. This is a safe trick
 // in screen space.
 
-export default ({ regl, config }, inputs) => {
+export default ({ regl, config, mouse }, inputs) => {
 	const output = makePassFBO(regl, config.useHalfFloat);
 	const paletteTex = makePalette(regl, config.palette);
 	const { backgroundColor, cursorColor, glintColor, cursorIntensity, glintIntensity, ditherMagnitude } = config;
@@ -74,6 +74,7 @@ export default ({ regl, config }, inputs) => {
 			tex: inputs.primary,
 			bloomTex: inputs.bloom,
 			paletteTex,
+			mousePos: () => mouse ? [mouse.x, mouse.y] : [-1, -1],
 		},
 		framebuffer: output,
 	});

@@ -7,6 +7,18 @@ if (panelCover) {
 	panelCover.insertBefore(canvas, panelCover.firstChild);
 }
 
+// Track mouse position for interactive effects
+const mouse = { x: -1, y: -1 };
+document.addEventListener("mousemove", (e) => {
+	const rect = canvas.getBoundingClientRect();
+	mouse.x = (e.clientX - rect.left) / rect.width;
+	mouse.y = 1.0 - (e.clientY - rect.top) / rect.height; // Flip Y for GL
+});
+document.addEventListener("mouseleave", () => {
+	mouse.x = -1;
+	mouse.y = -1;
+});
+
 const loadJS = (src) =>
 	new Promise((resolve, reject) => {
 		const tag = document.createElement("script");
@@ -48,7 +60,7 @@ const startMatrix = async () => {
 	const lkg = { enabled: false, tileX: 1, tileY: 1 };
 
 	const fullScreenQuad = makeFullScreenQuad(regl);
-	const context = { regl, config, lkg, cameraTex, cameraAspectRatio };
+	const context = { regl, config, lkg, cameraTex, cameraAspectRatio, mouse };
 	const pipeline = makePipeline(context, [makeRain, makeBloomPass, makePalettePass, makeQuiltPass]);
 	const screenUniforms = { tex: pipeline[pipeline.length - 1].outputs.primary };
 	const drawToScreen = regl({ uniforms: screenUniforms });
