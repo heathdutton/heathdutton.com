@@ -8,13 +8,11 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+        <a href="https://github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
           <img src="https://www.gravatar.com/avatar/150a567c1af6bcdecc0773dc04ae098c?s=200" class="user-image shake-rotate" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
-        <hr class="panel-cover__divider">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
 
@@ -51,17 +49,6 @@
               </li>
               {% endif %}
 
-              {% if site.author.drupal_username %}
-              <!-- Drupal.org -->
-              <li class="navigation__item">
-                <a href="http://drupal.org/u/{{ site.author.drupal_username }}"
-                   title="{{ site.author.drupal_username }} on Drupal"
-                   target="_blank">
-                  <i class="fa fa-drupal"></i>
-                  <span class="label">Drupal</span>
-                </a>
-              </li>
-              {% endif %}
 
               {% if site.author.facebook_username %}
               <!-- Facebook -->

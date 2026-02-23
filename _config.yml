@@ -7,10 +7,10 @@ google_analytics: 'UA-18522798-1'
 
 author:
   name: 'heath dutton'
-  email: heathdutton@gmail.com
+  email: heathdutton@linux.com
   linkedin_username: heathdutton
   github_username: heathdutton
-  drupal_username: heathdutton
+  # drupal_username: heathdutton
   # twitter_username: heathdutton
   # facebook_username: heathadutton
 
